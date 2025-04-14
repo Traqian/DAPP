@@ -38,22 +38,9 @@ Install the following extensions in VS Code to enhance your development experien
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-#### 3. Install Docker Desktop
-Download and install Docker Desktop from [here](https://www.docker.com/products/docker-desktop/).
-
-#### 4. Set Up Docker
-1. Open a terminal and run the following command to check if Docker is installed correctly:
-   ```bash
-   docker version
-   ```
-2. Download the latest Ubuntu image:
-   ```bash
-   docker pull ubuntu
-   ```
-3. Verify the Docker image:
-   ```bash
-   docker images
-   ```
+#### 3.Setup
+.\DAPP-master\usr\app\workspace\frontend>npm install
+.\DAPP-master\usr\app\workspace\frontend>npm run start
 
 ## Project Structure
 ```
