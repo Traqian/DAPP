@@ -57,18 +57,13 @@ Download and install Docker Desktop from [here](https://www.docker.com/products/
 
 ## Project Structure
 ```
-comp5521-defi-swap/
-├── contracts/                  # Smart contract source files
-├── scripts/                    # Deployment and interaction scripts
-├── test/                       # Test files
-├── frontend/                   # Frontend application
-│   ├── public/                 # Static assets
-│   └── src/                    # Source code
-│       ├── components/         # React components
-│       ├── utils/              # Utility functions
-│       └── App.js              # Main application file
-├── hardhat.config.js           # Hardhat configuration
-└── package.json                # Project dependencies
+DApp/
+├── usr/                                       
+├── app/            
+│   ├── workspace/                                   
+│       ├── frontend/       
+│       ├── scripts/           
+│       └── test/                      
 ```
 
 ## Smart Contract Deployment
