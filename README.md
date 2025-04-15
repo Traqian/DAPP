@@ -6,11 +6,12 @@ Welcome to the COMP5521 DeFi Swap Platform! This project is a decentralized fina
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Project Structure](#project-structure)
+  - [Project Structure](project-structure)
 - [Smart Contract Deployment](#Deployment)
 - [Testing](#testing)
 - [Frontend Application](#Frontend-Application)
-- [Run the React App](#interacting-with-the-blockchain)
+- [Run the React App](Run-the-React-App)
+- [Demo](Demo)
 - [Further Readings](#further-readings)
 
 ## Getting Started
@@ -136,7 +137,7 @@ Before you begin, ensure you have the following installed on your machine:
    
         Use the CTRL + C keyboard shortcut
 
-## Result 
+## Demo 
 ![960da16caad38e628cf556419373604](https://github.com/user-attachments/assets/29499df5-2dd2-4461-8400-0ad7416d0f20)
 ![cde21d36ef8452a811d3b8f364e3067](https://github.com/user-attachments/assets/ebcf5ed0-a2bb-41cc-9ddf-61f1f58280f7)
 ![9e65bffe4e0ae03f0d749ec539a4607](https://github.com/user-attachments/assets/66c4933e-6c6d-44fb-872a-8440a64fd3ac)
