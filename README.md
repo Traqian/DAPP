@@ -66,7 +66,9 @@ DAPP-master/
 
     Run the script: `npx hardhat run --network localhost scripts/deploy.js`
 
-npx hardhat test
+### Testing
+
+    Run the following command at the workspace directory: `npx hardhat test`
 
 npx hardhat console --network localhost
 
