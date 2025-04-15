@@ -71,40 +71,56 @@ Before you begin, ensure you have the following installed on your machine:
 
     Run the following command at the workspace directory: `npx hardhat test`
 
-Preparation for Connecting to Frontend
+## Preparation for Connecting to Frontend
 
-npx hardhat console --network localhost
+### Transfer Alpha and Beta to Your Address
 
-const NewToken = await hre.ethers.getContractFactory("NewToken");
+    Import tokens to your MetaMask wallet by specifying the addresses. 
+    The addresses can be found in `frontend/src/utils/deployed-addresses.json`. 
+    Both of the balances shown should be zero.
 
-const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
+### Transfer Alpha and Beta via Console
 
-await Alpha.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+1. Open the Hardhat console for interacting with the blockchain:
 
-const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
+        cd workspace
+        npx hardhat console --network localhost
+    
+1. Run the following commands:
 
-await Beta.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+        npx hardhat console --network localhost
+        
+        const NewToken = await hre.ethers.getContractFactory("NewToken");
+        
+        const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
+        
+        await Alpha.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+        
+        const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
+        
+        await Beta.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+        
+        npx hardhat run scripts/transferALPHA.js --network localhost
+        
+        npx hardhat run scripts/transferBETA.js --network localhost
+        
+        
+        const Pool = await hre.ethers.getContractFactory("Pool");
+        
+        const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb')
+        
+        const NewToken = await hre.ethers.getContractFactory("NewToken");
+        
+        const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
+        
+        await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
+        
+        const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
+        
+        await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
+        
+        await pool.addLiquidity(ethers.parseEther("1000"))
 
-npx hardhat run scripts/transferALPHA.js --network localhost
-
-npx hardhat run scripts/transferBETA.js --network localhost
-
-
-const Pool = await hre.ethers.getContractFactory("Pool");
-
-const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb')
-
-const NewToken = await hre.ethers.getContractFactory("NewToken");
-
-const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
-
-await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
-
-const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
-
-await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
-
-await pool.addLiquidity(ethers.parseEther("1000"))
 ## Smart Contract Deployment
 
 ### 1. Install Hardhat and Dependencies
