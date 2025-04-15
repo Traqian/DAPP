@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed on your machine:
             │       └── package-lock               
         
 #### 2.Install dependencies
-    .\DAPP-master\usr\app\workspace\frontend>npm install
+    .\DAPP-main\usr\app\workspace\frontend>npm install
 
 ### Payment Integration
 
