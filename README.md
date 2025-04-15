@@ -86,7 +86,7 @@ Before you begin, ensure you have the following installed on your machine:
         cd workspace
         npx hardhat console --network localhost
     
-1. Run the following commands:
+2. Run the following commands:
 
         npx hardhat console --network localhost
         
@@ -99,126 +99,44 @@ Before you begin, ensure you have the following installed on your machine:
         const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
         
         await Beta.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
-        
-        npx hardhat run scripts/transferALPHA.js --network localhost
-        
-        npx hardhat run scripts/transferBETA.js --network localhost
-        
-        
-        const Pool = await hre.ethers.getContractFactory("Pool");
-        
-        const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb')
-        
-        const NewToken = await hre.ethers.getContractFactory("NewToken");
-        
-        const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
-        
-        await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
-        
-        const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
-        
-        await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
-        
-        await pool.addLiquidity(ethers.parseEther("1000"))
 
-## Smart Contract Deployment
+3.Check your balances at MetaMask
 
-### 1. Install Hardhat and Dependencies
-```bash
-npm install --save-dev hardhat
-npm install --save-dev @nomicfoundation/hardhat-toolbox
-npm install @openzeppelin/contracts
-```
+### Transfer Alpha and Beta via Scripts
 
-### 2. Configure Hardhat
-Update `hardhat.config.js` with the following content:
-```javascript
-require("@nomicfoundation/hardhat-toolbox");
+      Run the scripts at the workspace directory:
+      cd workspace
+      npx hardhat run scripts/transferALPHA.js --network localhost
+      npx hardhat run scripts/transferBETA.js --network localhost
+    
+### Add initial liquidity of 1000 ALPHA and 2000 BETA to the pool:
 
-module.exports = {
-  solidity: {
-    version: "0.8.20",
-    settings: {
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
-    }
-  },
-  networks: {
-    hardhat: {
-      chainId: 31337
-    },
-    localhost: {
-      url: "http://127.0.0.1:8545"
-    }
-  }
-};
-```
+   1. Open the Hardhat console for interacting with the blockchain:
+      
+    cd workspace
+    npx hardhat console --network localhost
 
-### 3. Compile Contracts
-```bash
-npx hardhat compile
-```
+   2. Add initial liquidity of 1000 ALPHA and 2000 BETA to the pool:
+      
+    const Pool = await hre.ethers.getContractFactory("Pool");
+    const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb')
+    const NewToken = await hre.ethers.getContractFactory("NewToken");
+    const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
+    await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
+    const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
+    await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
+    await pool.addLiquidity(ethers.parseEther("1000"))
+     
+## Run the React App
+1. Start the Web Server**:
+    
+        run `npm run start` at your project directory and
+        paste `http://localhost:3000` to your browser
+2. End the Web Server:
+   
+        Use the CTRL + C keyboard shortcut
 
-### 4. Deploy Contracts
-Run the deployment script:
-```bash
-npx hardhat run scripts/deploy.js --network localhost
-```
-
-## Frontend Application
-
-### 1. Create React App
-```bash
-cd frontend
-npx create-react-app .
-```
-
-### 2. Install Dependencies
-```bash
-npm install web3 ethers react-bootstrap bootstrap
-```
-
-### 3. Start the Frontend
-```bash
-npm start
-```
-
-## Interacting with the Blockchain
-
-### 1. Connect MetaMask to Hardhat Network
-1. Open MetaMask and select "Add a custom network".
-2. Enter the following details:
-   - **Network Name**: Hardhat Network
-   - **RPC URL**: `http://127.0.0.1:8545`
-   - **Chain ID**: `31337`
-   - **Currency Symbol**: ETH
-
-### 2. Transfer Tokens
-Use the provided scripts to transfer tokens to your MetaMask account:
-```bash
-npx hardhat run scripts/transferALPHA.js --network localhost
-npx hardhat run scripts/transferBETA.js --network localhost
-```
-
-## Testing
-
-### 1. Run Tests
-```bash
-npx hardhat test
-```
-
-### 2. Test Swap Functionality
-1. Start the Hardhat network:
-   ```bash
-   npx hardhat node
-   ```
-2. Run the swap test script:
-   ```bash
-   npx hardhat run scripts/swapTest.js --network localhost
-   ```
-### Result 
+## Result 
 ![960da16caad38e628cf556419373604](https://github.com/user-attachments/assets/29499df5-2dd2-4461-8400-0ad7416d0f20)
 ![cde21d36ef8452a811d3b8f364e3067](https://github.com/user-attachments/assets/ebcf5ed0-a2bb-41cc-9ddf-61f1f58280f7)
 ![9e65bffe4e0ae03f0d749ec539a4607](https://github.com/user-attachments/assets/66c4933e-6c6d-44fb-872a-8440a64fd3ac)
