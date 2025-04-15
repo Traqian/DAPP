@@ -28,16 +28,16 @@ Before you begin, ensure you have the following installed on your machine:
 ## Project Structure
 ```
 DAPP-master/
-├── usr/                                       
-  ├── app/           
-│   ├── workspace/                                   
-│       ├── frontend/
-│       ├── contracts/       
-│       ├── scripts/           
-│       └── test/
-│       └── hardhat.config.js
-│       └── package
-│       └── package-lock               
+        ├── usr/                                       
+          ├── app/           
+        │   ├── workspace/                                   
+        │       ├── frontend/
+        │       ├── contracts/       
+        │       ├── scripts/           
+        │       └── test/
+        │       └── hardhat.config.js
+        │       └── package
+        │       └── package-lock               
 ```
 #### 2.Setup
 .\DAPP-master\usr\app\workspace\frontend>npm install
