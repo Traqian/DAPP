@@ -27,7 +27,7 @@ Before you begin, ensure you have the following installed on your machine:
 #### 1. Download ZIP of the Code
 ## Project Structure
 ```
-DApp/
+DAPP-master/
 ├── usr/                                       
   ├── app/           
 │   ├── workspace/                                   
