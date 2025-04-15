@@ -52,8 +52,9 @@ DAPP-master/
     7. Click “Save”.
 
 #### 4.Interacting with Blockchain 
-
-npx hardhat run scripts/transferDF.js --network localhost
+    1.Go to the workspace directory: cd workspace
+    2.npx hardhat run scripts/transferDF.js --network localhost
+    3.Check your DF balance at MetaMask
 
 npx hardhat run --network localhost scripts/deploy.js
 
