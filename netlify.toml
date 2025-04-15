@@ -1,0 +1,3 @@
+[build]
+  publish = "usr/app/workspace/frontend/build"
+  command = "cd usr/app/workspace/frontend && npm install && npm run build"
