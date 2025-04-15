@@ -9,7 +9,7 @@ Welcome to the COMP5521 DeFi Swap Platform! This project is a decentralized fina
 - [Smart Contract Deployment](#Deployment)
 - [Testing](#testing)
 - [Frontend Application](#Frontend)
-- [Run the React App](Run-the-React-App)
+- [Run the React App](Run-React-App)
 - [Demo](Demo)
 - [Further Readings](#further-readings)
 
@@ -127,7 +127,7 @@ Before you begin, ensure you have the following installed on your machine:
     await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
     await pool.addLiquidity(ethers.parseEther("1000"))
      
-## Run the React App
+## Run React App
 1. Start the Web Server**:
     
         run `npm run start` at your project directory and
