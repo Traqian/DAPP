@@ -41,7 +41,9 @@ Before you begin, ensure you have the following installed on your machine:
 #### 2.Install dependencies
     .\DAPP-master\usr\app\workspace\frontend>npm install
 
-#### 3.Connect to Hardhat Network
+### Payment Integration
+
+#### 1.Connect to Hardhat Network
     1. npx hardhat node
     2. Select the network you are currently connected to in the upper left corner.
     3. Select “Add a custom network”.
@@ -50,7 +52,7 @@ Before you begin, ensure you have the following installed on your machine:
     6. Enter an arbitrary network name and an arbitrary currency symbol（such as DF）.
     7. Click “Save”.
 
-#### 4.Interacting with Blockchain 
+#### 2.Interacting with Blockchain 
     1.Go to the workspace directory: cd workspace
     2.npx hardhat run scripts/transferDF.js --network localhost
     3.Check your DF balance at MetaMask
