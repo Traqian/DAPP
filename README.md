@@ -25,18 +25,9 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Installation
 
-#### 1. Clone the Repository
-```bash
-Download ZIP of the CODE
+#### 1. Download ZIP of the Code
 
-#### 2. Install VS Code Extensions
-Install the following extensions in VS Code to enhance your development experience:
-- [Solidity](https://marketplace.visualstudio.com/items?itemName=juanblanco.solidity)
-- [JavaScript](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-
-#### 3.Setup
+#### 2.Setup
 .\DAPP-master\usr\app\workspace\frontend>npm install
 .\DAPP-master\usr\app\workspace\frontend>npm run start
 
