@@ -40,7 +40,7 @@ DAPP-master/
         │       └── package-lock               
 ```
 #### 2.Install dependencies
-.\DAPP-master\usr\app\workspace\frontend>npm install
+    .\DAPP-master\usr\app\workspace\frontend>npm install
 
 #### 3.Connect to Hardhat Network
     1. npx hardhat node
@@ -56,7 +56,15 @@ DAPP-master/
     2.npx hardhat run scripts/transferDF.js --network localhost
     3.Check your DF balance at MetaMask
 
-npx hardhat run --network localhost scripts/deploy.js
+## Deployment
+
+### Compile Contracts
+
+    Before deploying a contract to the blockchain, you have to compile it: `npx hardhat compile`
+
+### Deploy Contracts
+
+    Run the script: `npx hardhat run --network localhost scripts/deploy.js`
 
 npx hardhat test
 
