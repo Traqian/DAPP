@@ -24,21 +24,20 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Installation
 
-#### 1. Download ZIP of the Code
-## Project Structure
-```
-DAPP-master/
-        ├── usr/                                       
-          ├── app/           
-        │   ├── workspace/                                   
-        │       ├── frontend/
-        │       ├── contracts/       
-        │       ├── scripts/           
-        │       └── test/
-        │       └── hardhat.config.js
-        │       └── package
-        │       └── package-lock               
-```
+#### 1.Download ZIP of the Code
+    Project Structure
+    DAPP-master/
+            ├── usr/                                       
+              ├── app/           
+            │   ├── workspace/                                   
+            │       ├── frontend/
+            │       ├── contracts/       
+            │       ├── scripts/           
+            │       └── test/
+            │       └── hardhat.config.js
+            │       └── package
+            │       └── package-lock               
+        
 #### 2.Install dependencies
     .\DAPP-master\usr\app\workspace\frontend>npm install
 
@@ -69,6 +68,8 @@ DAPP-master/
 ### Testing
 
     Run the following command at the workspace directory: `npx hardhat test`
+
+Preparation for Connecting to Frontend
 
 npx hardhat console --network localhost
 
