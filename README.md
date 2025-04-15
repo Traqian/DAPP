@@ -9,7 +9,7 @@ Welcome to the COMP5521 DeFi Swap Platform! This project is a decentralized fina
   - [Project Structure](#project-structure)
 - [Smart Contract Deployment](#Deployment)
 - [Testing](#testing)
-- [Frontend Application](#Preparation for Connecting to Frontend)
+- [Frontend Application](#Frontend Application)
 - [Run the React App](#interacting-with-the-blockchain)
 - [Further Readings](#further-readings)
 
@@ -71,7 +71,7 @@ Before you begin, ensure you have the following installed on your machine:
 
     Run the following command at the workspace directory: `npx hardhat test`
 
-## Preparation for Connecting to Frontend
+## Frontend Application
 
 ### Transfer Alpha and Beta to Your Address
 
