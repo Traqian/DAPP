@@ -26,21 +26,25 @@ Before you begin, ensure you have the following installed on your machine:
 ### Installation
 
 #### 1. Download ZIP of the Code
-
-#### 2.Setup
-.\DAPP-master\usr\app\workspace\frontend>npm install
-.\DAPP-master\usr\app\workspace\frontend>npm run start
-
 ## Project Structure
 ```
 DApp/
 ├── usr/                                       
-├── app/            
+  ├── app/           
 │   ├── workspace/                                   
-│       ├── frontend/       
+│       ├── frontend/
+│       ├── contracts/       
 │       ├── scripts/           
-│       └── test/                      
+│       └── test/
+│       └── hardhat.config.js
+│       └── package
+│       └── package-lock               
 ```
+#### 2.Setup
+.\DAPP-master\usr\app\workspace\frontend>npm install
+.\DAPP-master\usr\app\workspace\frontend>npm run start
+
+
 
 ## Smart Contract Deployment
 
