@@ -17,9 +17,8 @@ Welcome to the COMP5521 DeFi Swap Platform! This project is a decentralized fina
 
 ### Prerequisites
 Before you begin, ensure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) (v6 or higher)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Node.js](https://nodejs.org/) (v22 or higher)
+- [npm](https://www.npmjs.com/) (v10 or higher)
 - [VS Code](https://code.visualstudio.com/) (recommended)
 - [MetaMask](https://metamask.io/) (for interacting with the blockchain)
 
