@@ -27,9 +27,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/comp5521-defi-swap.git
-cd comp5521-defi-swap
-```
+Download ZIP of the CODE
 
 #### 2. Install VS Code Extensions
 Install the following extensions in VS Code to enhance your development experience:
