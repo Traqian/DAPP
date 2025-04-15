@@ -92,13 +92,13 @@ Before you begin, ensure you have the following installed on your machine:
         
         const NewToken = await hre.ethers.getContractFactory("NewToken");
         
-        const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
+        const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57') <according to deployed-addresses.json>
         
-        await Alpha.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+        await Alpha.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n) <according to deployed-addresses.json>
         
-        const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
+        const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D') <according to deployed-addresses.json>
         
-        await Beta.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n)
+        await Beta.transfer('0xF62Dab013fdFcE34Da4bd2dE80e293247973504D', 100000000000000000000000n) <according to deployed-addresses.json>
 
 3.Check your balances at MetaMask
 
@@ -119,12 +119,12 @@ Before you begin, ensure you have the following installed on your machine:
    2. Add initial liquidity of 1000 ALPHA and 2000 BETA to the pool:
       
     const Pool = await hre.ethers.getContractFactory("Pool");
-    const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb')
+    const pool = Pool.attach('0xa5a43731500A75BF9a7c522d919F7FD370718bEb') <according to deployed-addresses.json>
     const NewToken = await hre.ethers.getContractFactory("NewToken");
-    const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57')
-    await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
-    const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D')
-    await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000"))
+    const Alpha = NewToken.attach('0x5F3476370470E1d7A83b3982D9BD3e972Ea5dB57') <according to deployed-addresses.json>
+    await Alpha.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000")) <according to deployed-addresses.json>
+    const Beta = NewToken.attach('0x010C413A9FfD17Fe1D85384BeC96D0f099da478D') <according to deployed-addresses.json>
+    await Beta.approve('0xa5a43731500A75BF9a7c522d919F7FD370718bEb', ethers.parseEther("1000000")) <according to deployed-addresses.json>
     await pool.addLiquidity(ethers.parseEther("1000"))
      
 ### Run React App
