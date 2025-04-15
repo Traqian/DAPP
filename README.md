@@ -8,9 +8,9 @@ Welcome to the COMP5521 DeFi Swap Platform! This project is a decentralized fina
   - [Installation](#installation)
   - [Project Structure](#project-structure)
 - [Smart Contract Deployment](#Deployment)
-- [Frontend Application](#frontend-application)
-- [Interacting with the Blockchain](#interacting-with-the-blockchain)
 - [Testing](#testing)
+- [Frontend Application](#Preparation for Connecting to Frontend)
+- [Run the React App](#interacting-with-the-blockchain)
 - [Further Readings](#further-readings)
 
 ## Getting Started
