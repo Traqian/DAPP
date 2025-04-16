@@ -137,18 +137,8 @@ Before you begin, ensure you have the following installed on your machine:
         Use the CTRL + C keyboard shortcut
 
 ### Demo 
-![960da16caad38e628cf556419373604](https://github.com/user-attachments/assets/29499df5-2dd2-4461-8400-0ad7416d0f20)
-![cde21d36ef8452a811d3b8f364e3067](https://github.com/user-attachments/assets/ebcf5ed0-a2bb-41cc-9ddf-61f1f58280f7)
-![9e65bffe4e0ae03f0d749ec539a4607](https://github.com/user-attachments/assets/66c4933e-6c6d-44fb-872a-8440a64fd3ac)
-![405bb295f1834045a0dedd58e4006b8](https://github.com/user-attachments/assets/af7a3cfd-c304-40a2-870a-d9b2dd99ede9)
-![08a2e593e7236557ccddff3d5b2d424](https://github.com/user-attachments/assets/668ed129-bede-4118-bc4b-40c99661c786)
-![6c4e2bc3808e7291102b38fc384b1eb](https://github.com/user-attachments/assets/21228082-75ab-45ba-8bb9-f775c84f8da1)
-![3336ff33b76e654e529cd256ab52a71](https://github.com/user-attachments/assets/cc0211a2-87cc-4c5f-a6b9-f1b172780b3a)
-![2cc7771d355f3af61c21e817ffe8a3c](https://github.com/user-attachments/assets/02c413db-d3cf-483b-9f34-de7355aec52d)
-![053556d66870ac44dcca57c3507385a](https://github.com/user-attachments/assets/1074ae62-01da-47f0-9d2f-79b72887af74)
-![8ad7770169b05990464dcf0c7821ad1](https://github.com/user-attachments/assets/a19da82a-7896-44da-baf6-1d4bfc2d28ee)
-![5123be93c3555394b42e536dbdcbc61](https://github.com/user-attachments/assets/922822b3-b832-4a20-92d2-e378afa86680)
-![22523320e9f4ee5065db3ff33fb1218](https://github.com/user-attachments/assets/6aad292c-1e83-4987-b2ec-338077d22577)
+![image](https://github.com/user-attachments/assets/de7eb32a-cba1-4870-b358-5d535b2426b1)
+
 
 ## Further Readings
 - [Hardhat Documentation](https://hardhat.org/)
